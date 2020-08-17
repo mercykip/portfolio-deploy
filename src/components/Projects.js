@@ -166,7 +166,7 @@ toggleCategories(){
                </CardTitle>
                <CardText>MoneyWallet API  Laravel project </CardText>
                <CardActions  border  style={{color:'#fff'}}>
-                   <Button href="https://github.com/mercykip/LaravelMoneyWallet"  colored>GitHub</Button>
+                   <Button href="https://github.com/mercykip/DjangoDay1"  colored>GitHub</Button>
                    <Button colored>Documentation </Button>
                </CardActions>
                <CardMenu style={{}}>

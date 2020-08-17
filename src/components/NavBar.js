@@ -8,13 +8,13 @@ class NavBar extends Component{
 
 <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title={<a href="/projects" style={{textDecoration:"none",color:"white"}}>MercyJemosop</a> }  scroll>
+        <Header className="header-color" title={<a href="/portfolio-deploy" style={{textDecoration:"none",color:"white"}}>MercyJemosop</a> }  scroll>
         {/* <Header className="header-color"> */}
             <Navigation>
           
                 <Link to="/resume">Resume</Link>
                 <Link to="/about">About</Link>
-                <Link to="/projects">Projects</Link>
+                <Link to="/portfolio-deploy">Projects</Link>
                 <Link to="/contact">Contact</Link>
              
             </Navigation>
@@ -23,7 +23,7 @@ class NavBar extends Component{
             <Navigation>
                 <Link to="/resume">Resume</Link>
                 <Link to="/about">About</Link>
-                <Link to="/projects">Projects</Link>
+                <Link to="/portfolio-deploy">Projects</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
