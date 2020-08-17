@@ -59,6 +59,7 @@ toggleCategories(){
              </Card>
         );
     }
+    
     else if(this.state.activeTab===3){
         return(
             <Card shadow={5} style={{minWidth:"450", margin: 'auto'}}>
@@ -157,18 +158,37 @@ toggleCategories(){
           </Card>
         );
     }
+    else if(this.state.activeTab===7){
+        return(
+            <Card shadow={5} style={{minWidth:"450", margin: 'auto'}}>
+               <CardTitle style={{color:"#000",height:'176px',background:'url(https://www.epicentrofestival.com/wp-content/uploads/2020/02/epicentrofestival-django-web-development-web-framework-python-softwa-django-g7h18w3ae2.jpg) center / cover'}}>
+   
+               </CardTitle>
+               <CardText>MoneyWallet API  Laravel project </CardText>
+               <CardActions  border  style={{color:'#fff'}}>
+                   <Button href="https://github.com/mercykip/LaravelMoneyWallet"  colored>GitHub</Button>
+                   <Button colored>Documentation </Button>
+               </CardActions>
+               <CardMenu style={{}}>
+                   <IconButton name='share'></IconButton>
+               </CardMenu>
+             </Card>
+        );
+    }
 }
     render(){
         return(
             <div className='category-tabs'>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab:tabId})} ripple>
                      <Tab>PHP</Tab>
+                     
                      <Tab>HTML/CSS</Tab>
                      <Tab>Laravel</Tab>
                      <Tab>SpringBoot</Tab>
                      <Tab>Angular</Tab>
                       <Tab>React</Tab>
                       <Tab>Android</Tab>
+                      <Tab>Django</Tab>
                 </Tabs>
        
             <Grid >

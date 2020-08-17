@@ -8,8 +8,8 @@ class NavBar extends Component{
 
 <div className="demo-big-content">
     <Layout>
-        
-        <Header className="header-color" title={<a href="/" style={{textDecoration:"none",color:"white"}}>MercyJemosop</a> }  scroll>
+        <Header className="header-color" title={<a href="/projects" style={{textDecoration:"none",color:"white"}}>MercyJemosop</a> }  scroll>
+        {/* <Header className="header-color"> */}
             <Navigation>
           
                 <Link to="/resume">Resume</Link>

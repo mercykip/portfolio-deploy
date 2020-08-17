@@ -1,5 +1,6 @@
 import React ,{Component} from 'react';
 import {Grid,Cell} from 'react-mdl';
+
 class Resume extends Component{
     render(){
         return(
@@ -8,11 +9,7 @@ class Resume extends Component{
                 <Cell col={4}>
                     <div className="resume-img" >
                      <h1>Resume</h1>
-                        <img src="images/contact.jpg"     style={{width:'250px',height:'250px'}} alt="MercyJemosop"/>
-          
-                    {/* <h2 style={{paddingTop:'2em'}}>Mercy Kipyegon</h2>
-                    <h4 style={{color:'grey'}}>Programmer</h4> */}
-                    {/* */}
+                        <img src="/images/contact.jpg"  style={{width:'250px',height:'250px'}} alt="MercyJemosop"/>
                          <h5 style={{paddingTop:'2em'}}>Name</h5>
                          <p  >Kipyegon Jemosop Mercy</p>
                          <h5>Date of Birth</h5>
