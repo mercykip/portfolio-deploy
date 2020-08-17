@@ -1,4 +1,6 @@
 import React ,{Component} from 'react';
+import Django from '../documentation/Django';
+import {Link } from "react-router-dom";
 import { Tab,Tabs, Grid ,Cell,Card,CardTitle,CardText,CardActions,Button,CardMenu,IconButton} from 'react-mdl';
 
 class Projects extends Component{
@@ -167,7 +169,8 @@ toggleCategories(){
                <CardText>MoneyWallet API  Laravel project </CardText>
                <CardActions  border  style={{color:'#fff'}}>
                    <Button href="https://github.com/mercykip/DjangoDay1"  colored>GitHub</Button>
-                   <Button colored>Documentation </Button>
+                   <Button colored style={{textDecoration:"none"}}> <Link to="/django" style={{textDecoration:"none",color:"blue"}}>Documentation </Link></Button> 
+             
                </CardActions>
                <CardMenu style={{}}>
                    <IconButton name='share'></IconButton>
