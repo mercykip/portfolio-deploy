@@ -95,20 +95,48 @@ class Django extends Component{
                            <p><i>Relative import is importing documents from the same directory</i>
                            <br/>from .models import Account
                            <br/>admin.site.register(Account)
-                        
-                        
                            </p>
                            </ul>
                            </p>
-                      
-                 
+                     <p>
                        <h5 style={{textAlign:"left",color:"green"}}>Using Python Shell</h5>
-                 
-    
+                       To open the python shell run: <b>python manage.py shell</b>. 
+                       This command allows us to save/create an account
+                       <ol>
+                           <li>import classes</li>
+                           from .models import Account
+                           <li>view items(accounts) created/saved in the Database</li>
+                           Account.objects.all()
+                           <li>Create account in the shell</li>
+                           Account.objects.create(name='saving',description='saving account')
+                           <br/><i>The name and description fields are declared in the models.py</i>
+                           <br/><i>if you click enter multiple times, the
+                                same account will be created that number of times</i>
+                       </ol>
+                       </p>
+                       <p>
+                       <h5 style={{textAlign:"left",color:"green"}}>Starting over and adding new fields</h5>
+                       <ol>
+                           <li>delete all files in the migration folder  exept init</li>
+                           <li>delete pycache folder inside migration</li>
+                           <li>delete mysqlite database </li>
+                           add fields with their correct field types refer to https://docs.djangoproject.com/en/3.1/ref/forms/fields/
+                      <li>update the database</li>
+                      <li>create superuser</li>
+                      <li>Navigate to admin site to view the different fields layout
+                          <ul>
+                              <li>models.CharField(max_length=120)#max_length=required</li>
+                              <li>models.TextField(blank=True,null=True)</li>
+                              <li>models.DecimalField(decimal_places=2,max_digits=1000)</li>
+                              <li> models.TextField(default='this is cool')</li>
+                          </ul>
+                      </li>
+                       </ol>
+                       </p>
                  </Cell>
                  </Grid>    
             </div>
         );
-        }
+        } 
 }
 export default Django;
