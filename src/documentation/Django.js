@@ -47,14 +47,62 @@ class Django extends Component{
                           <p> it contains the settings for your Django project. .</p>
                      </ul>
                      </div>
-                     <h5 style={{textAlign:"left",color:"green"}}>Create my first django App</h5>
-                     <p><b>Django application</b></p>
+                     <h5 style={{textAlign:"left",color:"green"}}>Create a superuser</h5>
+                     <p><b>SuperUser</b> is the most powerful user with permissions to create, read,
+                      update and delete data in the Django admin, which includes model records and 
+                      other users. staff. - A user marked as staff can access the Django admin.</p>
+                      <p>Important commands in django</p>
                      <ul>
-                         <li></li>
-                     </ul>
+                         <li><b>python manage.py migrate</b></li>
+                         <p>It sync settings with the django project, can also be used to create a new database<br/>
+                         in settings.py file change the sqlite database name and run the command to create a new database
+                         </p>
+                         <li><b>python manage.py runserver</b></li>
+                         <p>This command is used to start/run the server</p>
+                         <li><b>python manage.py createsuperuser</b></li>
+                         <p>It allows you to create a user with access to the admin: altimate super user<br/>
+                         This command promts you to enter your username, email(optional) and
+                          password(doen't have to be secure).
+                          The details will be used during login to the admin site.<br/>
+                          To access the admin site: run the server, add admin to the default server url example
+                          <b> localhost:8000/admin</b>
 
+                          <br/>
+                          You can perform any CRUD operation in the admin site
+                         </p>
+                     </ul>
+                     <h5 style={{textAlign:"left",color:"green"}}>Create custom django App</h5>
+                     <p><b>Django application</b> is a Python package that is
+                      specifically intended for use in a Django project. An application may use
+                      common Django conventions, such as having models , tests , urls , and views submodules.</p>
+                       <ul>
+                           <li><b>python manage.py startapp account</b></li>
+                           <p>command to create an application, account is the name of the application.
+                           <br/>
+                           Add fields to the model of the application 
+                         <p> Create a class with the same name as the model example <b>class Account(models.Model):
+                             </b> and add the application to the settings</p> </p>
+                             </ul>
+                             <p>
+                          <h5 style={{textAlign:"left",color:"green"}}>Commands to update the database</h5>
+                           <ul>
+                           <li><b>python manage.py makemigrations</b></li>
+                           <li><b>python manage.py migrate</b></li>
+                           <p>Run this two commands everytime you are making 
+                               changes models.py file or updating the database</p>
+                           <li><b>Registering a Model</b></li>
+                           <p>Models are registered in admin.py file in which is in the same directory </p>
+                           <p><i>Relative import is importing documents from the same directory</i>
+                           <br/>from .models import Account
+                           <br/>admin.site.register(Account)
+                        
+                        
+                           </p>
+                           </ul>
+                           </p>
+                      
                  
-                 
+                       <h5 style={{textAlign:"left",color:"green"}}>Using Python Shell</h5>
                  
     
                  </Cell>

@@ -8,7 +8,8 @@ class About extends Component{
                  <Grid className="about-grid">
                 <Cell col={4}>
             <Card  className="about" shadow={0} >
-            <CardTitle expand style={{color: '#fff', backgroundImage:'URL("images/contact.jpg " ) '}}></CardTitle>
+            <CardTitle expand style={{color: '#fff',
+             backgroundImage:'URL({process.env.PUBLIC_URL + "/images/contact.jpg"}) '}}></CardTitle>
             <CardText>
                Hi,My name is Jemosop Mercy, a full stack web developer from Nairobi, Kenya. Am passionate about programming and learning new skills in programming.
             </CardText>

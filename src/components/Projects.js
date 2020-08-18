@@ -19,7 +19,7 @@ toggleCategories(){
                <CardText>Disease Prediction PHP projects</CardText>
                <CardActions  border  style={{color:'#fff'}}>
                    <Button href="https://github.com/mercykip/diseaseP"     colored>GitHub</Button>
-                   <Button colored>LiveDemo</Button>
+                   <Button colored>Documentation</Button>
                </CardActions>
                <CardMenu style={{color:'#fff'}}>
                    <IconButton name='share'></IconButton>
@@ -36,7 +36,7 @@ toggleCategories(){
             <CardText>    HTML/CSS/Bootstrap/js   Dispensary system</CardText>
             <CardActions  border  style={{color:'#fff'}}>
                 <Button  href="https://github.com/mercykip/Dispensary" colored>GitHub</Button>
-                <Button colored>LiveDemo</Button>
+                <Button colored>Documentation</Button>
             </CardActions>
             <CardMenu style={{color:'#fff'}}>
                 <IconButton name='share'></IconButton>
@@ -53,7 +53,7 @@ toggleCategories(){
                <CardText>MoneyWallet API  Laravel project </CardText>
                <CardActions  border  style={{color:'#fff'}}>
                    <Button href="https://github.com/mercykip/LaravelMoneyWallet"  colored>GitHub</Button>
-                   <Button colored>LiveDemo</Button>
+                   <Button colored>Documentation</Button>
                </CardActions>
                <CardMenu style={{}}>
                    <IconButton name='share'></IconButton>
@@ -72,8 +72,8 @@ toggleCategories(){
             <CardText>MoneyWallet API SpringBoot project</CardText>
             <CardActions  border  style={{color:'#fff'}}>
                 <Button href="" colored>GitHub</Button>
-                <Button colored>LiveDemo</Button>
-                <Button colored>MoreProject</Button>
+                <Button colored>Documentation</Button>
+                {/* <Button colored>MoreProject</Button> */}
             </CardActions>
             <CardMenu style={{}}>
                 <IconButton name='share'></IconButton>
@@ -92,8 +92,8 @@ toggleCategories(){
             <CardText>MoneyWallet  Angular 2+ front-end(Admin-side) part of springbooot API project</CardText>
             <CardActions  border  style={{color:'#fff'}}>
                 <Button href="https://github.com/mercykip/Money-wallet"  colored>GitHub</Button>
-                <Button colored>LiveDemo</Button>
-                <Button colored>MoreProject</Button>
+                <Button colored>Documentation</Button>
+                {/* <Button colored>MoreProject</Button> */}
             </CardActions>
             <CardMenu style={{}}>
                 <IconButton name='share'></IconButton>
@@ -105,6 +105,7 @@ toggleCategories(){
     else if(this.state.activeTab===5){
         return(
             <div className="project-grid">
+                <div>
               {/* MoneyWallet Laravel front-end API*/}
             <Card shadow={5} style={{minWidth:"450", margin: 'auto'}}>
             <CardTitle style={{color:"#000",height:'176px',background:'url(https://www.import.io/wp-content/uploads/2017/10/React-logo.png) center / cover'}}>
@@ -114,13 +115,14 @@ toggleCategories(){
             <CardText>MoneyWallet  React front-end(Admin-side) for Laravel API project</CardText>
             <CardActions  border  style={{color:'#fff'}}>
                 <Button href="https://github.com/mercykip/Money-Wallet-Admin-React-project" colored>GitHub</Button>
-                <Button colored>LiveDemo</Button>
-                <Button colored>MoreProject</Button>
+                <Button colored>Documentation</Button>
+                {/* <Button colored>MoreProject</Button> */}
             </CardActions>
             <CardMenu style={{}}>
                 <IconButton name='share'></IconButton>
             </CardMenu>
           </Card>
+          </div>
       {/* My portfolio */}
           <Card shadow={5} style={{minWidth:"450", margin: 'auto'}}>
             <CardTitle style={{color:"#000",height:'176px',background:'url(https://www.import.io/wp-content/uploads/2017/10/React-logo.png) center / cover'}}>
@@ -128,8 +130,8 @@ toggleCategories(){
             <CardText>React Portfolio Project</CardText>
             <CardActions  border  style={{color:'#fff'}}>
                 <Button href="https://github.com/mercykip/React-Portfolio" colored>GitHub</Button>
-                <Button colored>LiveDemo</Button>
-                <Button colored>MoreProject</Button>
+                <Button colored>Documentation</Button>
+                {/* <Button colored>MoreProject</Button> */}
             </CardActions>
             <CardMenu style={{}}>
                 <IconButton name='share'></IconButton>
@@ -151,8 +153,8 @@ toggleCategories(){
             <CardText>MoneyWallet  Android Application front-end part of SpringBoot API</CardText>
             <CardActions  border  style={{color:'#fff'}}>
                 <Button href="https://github.com/mercykip/MoneyWallet-Android" colored>GitHub</Button>
-                <Button colored>LiveDemo</Button>
-                <Button colored>MoreProject</Button>
+                <Button colored>Documentation</Button>
+                {/* <Button colored>MoreProject</Button> */}
             </CardActions>
             <CardMenu style={{}}>
                 <IconButton name='share'></IconButton>
@@ -182,9 +184,20 @@ toggleCategories(){
     render(){
         return(
             <div className='category-tabs'>
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab:tabId})} ripple>
+                {/* <Tabs activeTab={this.state.activeTab} scrollButtons="auto" onChange={(tabId)=>this.setState({activeTab:tabId})} ripple> */}
+                <Tabs
+        //   value={value}
+        //   onChange={handleChange}
+          indicatorColor="primary"
+          textColor="primary"
+          variant="scrollable"
+          scrollButtons="auto"
+          aria-label="scrollable auto tabs example"
+          activeTab={this.state.activeTab}
+          onChange={(tabId)=>this.setState({activeTab:tabId})}
+          ripple
+        >
                      <Tab>PHP</Tab>
-                     
                      <Tab>HTML/CSS</Tab>
                      <Tab>Laravel</Tab>
                      <Tab>SpringBoot</Tab>

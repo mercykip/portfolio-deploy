@@ -9,7 +9,7 @@ class Resume extends Component{
                 <Cell col={4}>
                     <div className="resume-img" >
                      <h1>Resume</h1>
-                        <img src="/images/contact.jpg"  style={{width:'250px',height:'250px'}} alt="MercyJemosop"/>
+                     <img src={process.env.PUBLIC_URL + "/images/contact.jpg"} style={{width:'250px',height:'250px'}}/>
                          <h5 style={{paddingTop:'2em'}}>Name</h5>
                          <p  >Kipyegon Jemosop Mercy</p>
                          <h5>Date of Birth</h5>

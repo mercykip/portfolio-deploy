@@ -10,8 +10,9 @@ function App() {
       <NavBar/>
       
     </Router>
-
+ 
   );
+
 }
 
 export default App;
