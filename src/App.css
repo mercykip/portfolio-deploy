@@ -240,3 +240,14 @@ width: 100%;
    
     justify-content: center;
   }
+  .tableofcontent a{
+    text-decoration: none;
+    color:green;
+  }
+  .tableofcontent{
+    margin-bottom: 5px;
+  }
+  .about-grid h1,h2,h3,h4,h5,h6{
+    text-align: left;
+    color: green;
+  }
